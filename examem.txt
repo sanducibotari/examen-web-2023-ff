@@ -1,0 +1,27 @@
+package com.example.myapplication;
+
+class PC extends PC implements PCConfiguration {
+    private int ramSize = 0;
+    private int price = 300;
+
+    public PC(String price, String ramSize) {
+        super(price, ramSize)
+
+    public int getramSize() {
+        return maxprice;
+    }
+
+    public void setMaxprice(int maxprice) {
+        this.maxprice = maxprice;
+    }
+
+    @Override
+    public String toJson() {
+        return String.format("{brand:\"%s\",maxramSize:%s,color:\"%s\"}", getbrand(), getMaxramSize(), getprice());
+    }
+
+    @Override
+    public String getConfiguration() {
+        return String.format("Type: %s, max. ramSize: %s", "brand", maxprice);
+    }
+}

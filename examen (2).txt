@@ -1,0 +1,13 @@
+package com.example.myapplication;
+
+public class EntryPoint {
+    public static void main(String args[]) {
+        PC.PC = new brand ("ranSize", "price");
+        PCConfiguration configuration = brand;
+        System.out.println(brand.toJson());
+        System.out.println(configuration.getConfiguration());
+        PC.start();
+        PC.run();
+        PC.stop();
+    }
+}

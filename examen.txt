@@ -1,0 +1,33 @@
+package com.example.myapplication;
+
+class PC {
+    private PCState PCState;
+
+    public Motor() {
+        PCState = PCState.STOPPED;
+    }
+
+    public void start() {
+        if (PCState == PCState.STOPPED) {
+            PCState = PCState.STARTED;
+        } else {
+            System.out.format("PC can't start, state: %s", PCState.getState());
+        }
+    }
+
+    public void run() {
+        if (PCState == PCState.STARTED) {
+            PCState = PCState.RUNNING;
+        } else {
+            System.out.format("PC can't run, state: %s", PCState.getState());
+        }
+    }
+
+    public void stop() {
+        if (PCState == PCState.RUNNING) {
+            (PCState = PCState.STOPPED;
+        } else {
+            System.out.format("PC can't stop, state: %s", PCState.getState());
+        }
+    }
+}
